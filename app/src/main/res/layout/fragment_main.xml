@@ -1,0 +1,29 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MainFragment"
+    android:background="#CD0074"
+    >
+
+    <GridLayout
+        android:id="@+id/grid_letters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="5"
+        android:columnCount="5"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="32dp"
+        android:padding="16dp">
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/keyboard_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:rowCount="4"
+        android:columnCount="10"
+        android:padding="8dp">
+    </GridLayout>
+</FrameLayout>

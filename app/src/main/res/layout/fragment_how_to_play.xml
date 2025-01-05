@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CD0074"
+    tools:context=".fragments.HowToPlayFragment">
+
+    <TextView
+        android:id="@+id/tw1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="Wordle - увлекательная игра, в которой нужно угадывать слова.\n
+        Введя любое слово, вы увидеть в каких места выпопали"
+        android:textSize="20sp"
+        android:padding="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/grid_letters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="10dp"
+        android:columnCount="5"
+        android:padding="16dp"
+        android:rowCount="5"
+        app:layout_constraintStart_toStartOf="@+id/tw1"
+        app:layout_constraintTop_toBottomOf="@+id/tw1" />
+
+    <TextView
+        android:id="@+id/tw2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="Если буква подсвечивается зеленым, то она стоит на своем месте, если желтым - она просто присутствует в слово. Если красным, то данной буквы в слове нет"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/grid_letters"
+        app:layout_constraintTop_toBottomOf="@+id/grid_letters" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

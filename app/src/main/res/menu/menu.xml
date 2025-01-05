@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/aboutGame"
+        android:icon="@drawable/about"
+        android:title="Об игре"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/playBtn"
+        android:title="Играть"
+        android:icon="@drawable/playbtn"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/settings"
+        android:title="Играть"
+        android:icon="@drawable/settings"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/stats"
+        android:title="Играть"
+        android:icon="@drawable/speedometer"
+        app:showAsAction="always" />
+
+</menu>
